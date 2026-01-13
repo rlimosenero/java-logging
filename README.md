@@ -29,3 +29,42 @@ Get a local copy of this repository:
 
 ```bash
 git clone [Your GitHub URL Here]
+
+How to Import Libraries Manually to Eclipse:
+The required JAR files are located in: java-logging/library/
+
+Required Libraries:
+
+logback-classic-1.4.11.jar
+logback-core-1.4.11.jar
+slf4j-api-2.0.9.jar
+Steps to Add Libraries:
+
+Right-click on your project in Eclipse Package Explorer
+
+Select: Build Path → Configure Build Path...
+
+Click the "Libraries" tab
+
+Click "Add External JARs..." button
+
+Navigate to java-logging/library/ folder
+
+Select all three JAR files:
+
+Hold Ctrl (Windows/Linux) or Cmd (Mac)
+Click on logback-classic-1.4.11.jar
+Click on logback-core-1.4.11.jar
+Click on slf4j-api-2.0.9.jar
+Click "Open"
+
+Click "Apply and Close"
+
+Verify: Expand "Referenced Libraries" in Package Explorer - you should see all three JARs
+
+Alternative Method (Drag and Drop):
+
+Create a lib folder in your project root (if not exists)
+Copy the three JAR files into the lib folder
+Select all three JARs in Eclipse Package Explorer
+Right-click → Build Path → Add to Build Path
